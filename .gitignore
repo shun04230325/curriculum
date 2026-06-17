@@ -1,0 +1,10 @@
+### Eclipse ###
+.metadata/
+.settings/
+build/
+.classpath
+.project
+
+### Java ###
+*.class
+*.jar
