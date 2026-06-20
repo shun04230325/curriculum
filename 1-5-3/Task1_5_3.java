@@ -14,19 +14,29 @@ public class Task1_5_3 {
             double bmi;
 
             // 身長を入力
-            System.out.println("身長(m)を入力してください。");
+            System.out.println("ここに身長を入力してください");
             Scanner sc1 = new Scanner(System.in);
             height = sc1.nextDouble();
 
             // 体重を入力
-            System.out.println("体重(kg)を入力してください。");
+            System.out.println("ここに体重を入力してください");
             Scanner sc2 = new Scanner(System.in);
             weight = sc2.nextDouble();
 
             // ①
-            bmi = "ここに記述";
+            bmi = weight /  (height * height);
+            System.out.println(bmi);
 
             // ②
+            if (bmi < 18.5){
+            System.out.println("低体重");
+
+            } else if (bmi >= 25){
+            System.out.println("肥満");
+
+            } else {
+            System.out.println("普通体重");
+            }
 
         } catch (Exception e) {
             // InputMismatchException
