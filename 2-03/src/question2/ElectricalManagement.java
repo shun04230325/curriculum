@@ -33,7 +33,7 @@ public class ElectricalManagement {
          result = (fee * electricalUsage + BASIC_CHARGE);
 
         // 消費税計算（10％）
-        electricalFee = (int) Math.floor(result * this.TAX);
+        electricalFee = (int) Math.floor(result * TAX);
 
         // ②
         return electricalFee;
