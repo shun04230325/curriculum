@@ -1,6 +1,6 @@
 package question1;
 
-class Account {
+public class Account {
 
     // フィールド変数
     private String userName;
@@ -15,5 +15,9 @@ class Account {
     }
 
     // ① 
-
+    protected void printAccountInfo(){
+        System.out.println("ユーザー名は・・・" +userName);
+        System.out.println("ID・・・" + id);
+        System.out.println("パスワード・・・" +  password);
+    }
 }
