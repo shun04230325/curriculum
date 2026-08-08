@@ -41,7 +41,8 @@ public class Check1B {
                 }
 
                 // ①
-                System.out.println(ここに記述);
+
+                System.out.println(CONST_COMMON_TASK_INPUT_DANSU);
 
                 // 変数名danに入力された値を格納
                 dan = sc.nextInt();
@@ -50,15 +51,19 @@ public class Check1B {
                 for (int i = 1; i <= dan; i++) {
 
                     // ②
-
+                    for (int j = dan; j >= i; j-- ){
+                        System.out.print(" " );
+                    }
                     // ③
-
+                    for (int k = 0; k < i * 2 - 1; k++){
+                        System.out.print("*");
+                    }
                     // ここで段が切り替わるので改行
                     System.out.println();
                 }
 
                 // ④
-                System.out.println(ここに記述);
+                System.out.println("これは"+ dan +"段のピラミッドです");
 
             } catch (Exception e) {
                 // InputMismatchException

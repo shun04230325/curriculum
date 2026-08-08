@@ -3,8 +3,8 @@ public class Task1_5_1 {
     public static void main(String[] args) {
 
         // ①
-        final String CONST_NAME = "ここへ記述";
-        final String CONST_PASS = "ここへ記述";
+        final String CONST_NAME = "MONORI";
+        final String CONST_PASS = "MOTIMOTI";
 
         // 定数（メッセージ）
         final String CONST_MSG_SUCCESS = "ログイン成功です。";
@@ -13,10 +13,19 @@ public class Task1_5_1 {
         final String CONST_MSG_ERROR_INPUT = "入力情報に誤りがあります。";
 
         // ②
-        String name = "ここへ記述";
-        String pass = "ここへ記述";
+        String name = "MINORI";
+        String pass = "MOTIMOTI";
 
         // ③
+        if (name.equals("MINORI") && pass.equals("MOTIMOTI")){
+            System.out.println(CONST_MSG_SUCCESS);
+        }else if(name.equals("MINORI")){
+            System.out.println(CONST_MSG_ERROR_PASS );
+        }else if (pass.equals("MOTIMOTI")){
+            System.out.println(CONST_MSG_ERROR_NAME);
+        }else{
+            System.out.println(CONST_MSG_ERROR_INPUT);
+        }
 
     }
 }

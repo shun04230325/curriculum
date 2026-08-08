@@ -15,7 +15,7 @@ public class ElectricalManagement {
         this.electricalUsage = electricalUsage;
     }
 
-    public String calcElectricalFee() {
+    public int calcElectricalFee() {
 
         int electricalFee = 0;
 
@@ -29,13 +29,14 @@ public class ElectricalManagement {
 
         // 税抜き価格
         int result = 0;
-        // ①
+        // ①料金単価（fee）* 電気使用量(electricalUsage) + 基本料金（BASIC_CHARGE）
+         result = (fee * electricalUsage + BASIC_CHARGE);
 
         // 消費税計算（10％）
-        electricalFee = (int) Math.floor(result * this.TAX);
+        electricalFee = (int) Math.floor(result * TAX);
 
         // ②
-        return "【ここに記述】";
+        return electricalFee;
     }
 
 }
