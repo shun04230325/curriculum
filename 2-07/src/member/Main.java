@@ -8,6 +8,7 @@ public class Main {
         NormalMember yoshida = new PremiumMember("吉田太郎", 1, 50, 10000);
 
         // ①
-
+        tanaka.printMemberInfo();
+        yoshida.printMemberInfo();
     }
 }
